@@ -1,0 +1,100 @@
+.single{
+    display: flex;
+    width: 100%;
+
+    .container{
+        flex: 6;
+
+        .top{
+            padding: 1rem;
+            display: flex;
+            gap: 1rem;
+
+            .left{
+                flex: 1;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                border-radius: 5px;
+                position: relative;
+                padding: 2rem;
+
+
+                .editButton{
+                    position:absolute;
+                    top:10px;
+                    right: 10px;
+                    padding: 0.5rem 1.5rem;
+                    font-size: 1rem;
+                    color: crimson;
+                    background-color: rgba(255, 0, 0,0.05);
+                    border-radius:5px;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+
+                .title{
+                    font-size: 1.4rem;
+                    padding: 0.5rem;
+                    font-weight: 500;
+                    color: #152f4e;
+                }
+
+                .item{
+                    display: flex;
+                    gap: 1rem;
+
+                    .details{
+                       .itemtitle{
+                           margin-bottom: 0.8rem;
+                           color:rgba(0, 128, 0);
+                           font-weight: 500;
+                           font-size: 1.5rem;
+                       }
+
+                       .detailInfo{
+                           margin-bottom: 0.2rem;
+                           font-size: 0.9rem;
+                           letter-spacing: 0.05rem;
+
+                           .key{
+                               font-weight: 500;
+                               color: #a7b49e;
+                           }
+                           .value{
+                               font-weight: 200;
+                               color: #152f4e;
+                               padding-left: 0.4rem;
+                           }
+                       }
+                    }
+                }
+
+                .itemimage{
+                    width: 8rem;
+                    height: 8rem;
+                    border-radius: 50%;
+                    object-fit: cover;
+
+                }
+            }
+
+            .right{
+                flex: 2;
+            }
+        }
+
+        .bottom{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+            border-radius: 5px;
+            margin: 1rem;
+
+            .title{
+                padding:1rem;
+                font-weight: 500;
+                color: #152f4e;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
